@@ -1,1 +1,15 @@
-<h1>Sales new</h1>
+<%= form_with model: @sale do |form| %>
+  <%= form.label :cod %>
+  <%= form.text_field :cod %>
+  <%= form.label :detail %>
+  <%= form.text_area :detail %>
+  <%= form.label :category %>
+  <%= form.text_field :category %>
+  <%= form.label :value %>
+  <%= form.number_field :value %>
+  <%= form.label :discount %>
+  <%= form.number_field :discount %>
+  <%= form.label :tax, "Exento de IVA" %>
+  <%= form.check_box :tax%>
+  <%= form.submit "Crear" %>
+<% end %>
