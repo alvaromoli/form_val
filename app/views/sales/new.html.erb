@@ -1,6 +1,6 @@
 <%= form_with model: @sale do |form| %>
   <%= form.label :cod %>
-  <%= form.text_field :cod %>
+  <%= form.number_field :cod %>
   <%= form.label :detail %>
   <%= form.text_area :detail %>
   <%= form.label :category %>
@@ -10,6 +10,6 @@
   <%= form.label :discount %>
   <%= form.number_field :discount %>
   <%= form.label :tax, "Exento de IVA" %>
-  <%= form.check_box :tax%>
+  <%= form.check_box :tax %>
   <%= form.submit "Crear" %>
 <% end %>

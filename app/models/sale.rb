@@ -1,5 +1,5 @@
 class Sale < ApplicationRecord
-  validates :cod, uniqness: true
+  validates :cod, uniqueness: true
   validates :detail, presence: true
   validates :category, inclusion: { in: %w(uno dos tres cuatro cinco) }
   validates :value, numericality: { only_integer: true, greater_than: 0 }
